@@ -67,6 +67,32 @@
   }
 }
 
+@keyframes kurochka-2 {
+  0% {
+    transform: translate(calc(100vw - 224px), 80vh);
+  }
+
+  20% {
+    transform: translate(30vw, calc(100vh - 224px));
+  }
+
+  40% {
+    transform: translate(calc(100vw - 224px), 35vh);
+  }
+
+  60% {
+    transform: translate(0, 40vh);
+  }
+
+  80% {
+    transform: translate(70vw, 0);
+  }
+
+  100% {
+    transform: translate(0, 70vh);
+  }
+}
+
 .page {
   margin: 0;
   background-color: rgb(32, 33, 36);
@@ -133,6 +159,10 @@
   animation: kurochka 100s linear infinite;
 }
 
+.main-screen__bg-kurochka_path_2 {
+  animation: kurochka-2 57s linear infinite;
+}
+
 .main-screen__bg-kurochka_speed_slow {
   animation-delay: -33s;
 }
@@ -146,9 +176,7 @@
 }
 
 
-.main-screen__bg-kurochka_direction_reverse {
-  animation-direction: reverse;
-}
+
 
 .main-screen__content {
   display: flex;
